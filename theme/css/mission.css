@@ -1,0 +1,4 @@
+#showTable tr th:nth-child(9), #showTable tr td:nth-child(9),
+#showTable tr th:nth-child(10), #showTable tr td:nth-child(10) {
+    display: none;
+}

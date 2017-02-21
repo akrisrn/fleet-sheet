@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 1px;
+    border: none;
+    border-top: 1px solid dimgrey;
+}
+
+#des {
+    position: relative;
+    margin-top: -880px;
+    line-height: 28px;
+    height: 900px;
+    z-index: 2;
+    max-width: 750px;
+}
+
+#des h2 {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+#des p {
+    margin-bottom: 20px;
+}
+
+#des ul {
+    margin-left: 20px;
+}
+
+#cover {
+    height: 900px;
+    opacity: 0.5;
+    mix-blend-mode: darken;
+    box-shadow: 0 5px 10px dimgrey;
+}
+
+#header {
+    box-shadow: 0 5px 10px #888888;
+    position: fixed;
+    width: 100%;
+    background: #242424;
+    z-index: 10;
+}
+
+#header ul {
+    height: 50px;
+}
+
+#header ul li {
+    list-style: none;
+    float: left;
+    color: #FFF;
+}
+
+#header ul li:not(:first-child) {
+    border-bottom: 3px solid #242424;
+    transition: border-bottom 1s;
+    -moz-transition: border-bottom 1s;
+    -webkit-transition: border-bottom 1s;
+    -o-transition: border-bottom 1s;
+}
+
+#header ul li:not(:first-child):hover {
+    border-bottom: 3px solid white;
+}
+
+#header ul li:last-child input {
+    margin-left: 10px;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+
+#header ul li:not(:first-child) a {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    line-height: 50px;
+    color: #e0e0d1;
+    font-size: 16px;
+    text-align: center;
+    transition: background 1s;
+    -moz-transition: background 1s;
+    -webkit-transition: background 1s;
+    -o-transition: background 1s;
+}
+
+#header ul li:not(:first-child) a:hover {
+    background: #4f5d73;
+}
+
+#header ul li:first-child img {
+    width: 40px;
+    margin: 5px 10px 5px 50px;
+    float: left;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+
+#header ul li:first-child img:hover {
+    opacity: 1;
+    animation: rotate 0.5s;
+    -moz-animation: rotate 0.5s;
+    -webkit-animation: rotate 0.5s;
+    -o-animation: rotate 0.5s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#footer {
+    clear: both;
+    padding: 10px 0 0 50px;
+    color: darkgray;
+}
+
+#content {
+    padding: 55px 20px 55px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#show {
+    box-shadow: 5px 5px 5px #888888;
+    padding: 0 0 30px 0;
+}
+
+#primary {
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+#searchBox {
+    width: 150px;
+    height: 20px;
+}
+
+@media screen and (max-width: 765px) {
+    #header ul li:nth-child(2) {
+        display: none;
+    }
+
+    #content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #show {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        box-shadow: none;
+    }
+
+    #primary {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #header ul li:first-child img {
+        margin-left: 10px;
+    }
+
+    #header ul li:not(:first-child) a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #footer {
+        padding-left: 10px;
+    }
+
+    #cover {
+        opacity: 0.2;
+    }
+}
+
+.black {
+    width: auto;
+    display: inline;
+    background-color: black;
+}

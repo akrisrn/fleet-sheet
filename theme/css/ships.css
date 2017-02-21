@@ -1,0 +1,6 @@
+#showTable tr th:nth-child(20), #showTable tr td:nth-child(20),
+#showTable tr th:nth-child(21), #showTable tr td:nth-child(21),
+#showTable tr th:nth-child(22), #showTable tr td:nth-child(22),
+#showTable tr th:nth-child(23), #showTable tr td:nth-child(23) {
+    display: none;
+}
